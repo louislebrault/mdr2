@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 792ea15495d7894f7f66f596c8a3c33fc3ca78a7598ef77d3bdbda17d426053a
+-- hash: f8857e2122f95e1188185a7bca6a75c2b22e9b5e8949b637f892fd7d8111613b
 
 name:           mdr2
 version:        0.1.0.0
@@ -35,6 +35,7 @@ library
   build-depends:
       base >=4.7 && <5
     , network
+    , utf8-string
   default-language: Haskell2010
 
 executable mdr2-exe
@@ -48,6 +49,7 @@ executable mdr2-exe
       base >=4.7 && <5
     , mdr2
     , network
+    , utf8-string
   default-language: Haskell2010
 
 test-suite mdr2-test
@@ -62,4 +64,5 @@ test-suite mdr2-test
       base >=4.7 && <5
     , mdr2
     , network
+    , utf8-string
   default-language: Haskell2010
